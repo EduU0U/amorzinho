@@ -12,6 +12,7 @@
     :root {
       --vinho: #5a1a2e;
       --vinho-escuro: #3b0f1d;
+      --vinho-claro: #7a2a42;
       --rosa: #e7b6c7;
       --rosa-claro: #f4dce5;
       --creme: #f9f5f2;
@@ -28,11 +29,14 @@
       font-family: 'Cormorant Garamond', serif;
       color: var(--vinho-escuro);
       min-height: 100vh;
+      border-left: 12px solid var(--vinho);
+      border-right: 12px solid var(--vinho);
     }
 
     header {
       text-align: center;
       padding: 3rem 1rem 2rem;
+      border-bottom: 2px solid var(--vinho);
     }
 
     header h1 {
@@ -40,6 +44,7 @@
       font-size: clamp(2rem, 4vw, 3rem);
       color: var(--vinho);
       letter-spacing: 1px;
+      text-shadow: 1px 1px 0 var(--rosa-claro);
     }
 
     header p {
@@ -56,6 +61,7 @@
       overflow: hidden;
       border-radius: 18px;
       box-shadow: 0 20px 40px rgba(90, 26, 46, 0.25);
+      border: 3px solid var(--vinho);
     }
 
     .carousel-track {
@@ -100,9 +106,10 @@
       max-width: 900px;
       margin: 3rem auto;
       padding: 1.5rem;
-      background: linear-gradient(135deg, var(--rosa), var(--rosa-claro));
+      background: linear-gradient(135deg, var(--vinho-claro), var(--rosa));
       border-radius: 20px;
       box-shadow: 0 15px 30px rgba(90, 26, 46, 0.2);
+      border-left: 6px solid var(--vinho-escuro);
     }
 
     .music h2 {
@@ -127,6 +134,7 @@
       background: rgba(255, 255, 255, 0.65);
       border-radius: 22px;
       box-shadow: 0 25px 45px rgba(90, 26, 46, 0.25);
+      border: 2px solid var(--vinho);
     }
 
     .poem h2 {
@@ -148,7 +156,8 @@
       padding: 2rem 1rem;
       font-size: 0.9rem;
       color: var(--vinho-escuro);
-      opacity: 0.8;
+      opacity: 0.85;
+      border-top: 2px solid var(--vinho);
     }
 
     @media (max-width: 600px) {
